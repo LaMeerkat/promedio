@@ -1,59 +1,59 @@
 
 let resultado = 0;
 
-function promedio(primeraCalificacion, segundaCalificacion, terceraCalificacion, cuartaCalificacion) {
-     resultado = (primeraCalificacion + segundaCalificacion + terceraCalificacion + cuartaCalificacion) / 4
+function promedio(CalificacionMatematicas, CalificacionEspañol, CalificacionIngles, CalificacionCiencias) {
+     resultado = (CalificacionMatematicas + CalificacionEspañol, + CalificacionIngles + CalificacionCiencias) / 4
      };
 
-     let primeraCalificacion = ''
-     let segundaCalificacion = ''
-     let terceraCalificacion = ''
-     let cuartaCalificacion = ''
+     let CalificacionMatematicas = ''
+     let CalificacionEspañol = ''
+     let CalificacionIngles = ''
+     let CalificacionCiencias = ''
      let askAgain = true
      
  do {
-    primeraCalificacion = parseInt(prompt('Ingresa tu primera calificación'))
+    CalificacionMatematicas = parseInt(prompt('Ingresa tu primera calificación'))
 
-     if (primeraCalificacion <= 10) {
+     if (CalificacionMatematicas <= 10) {
           askAgain = false
      } else {
-         alert('Ingrese un número del 1 al 10')
+         alert('Ingresa tu calificación de Matematicas')
      }
 
  } while (askAgain);
 
 
  do {
-    segundaCalificacion = parseInt(prompt('Ingresa tu segunda calificación'))
+    CalificacionEspañol = parseInt(prompt('Ingresa tu segunda calificación'))
 
-     if (segundaCalificacion <= 10) {
+     if (CalificacionEspañol <= 10) {
           askAgain = false
      } else {
-         alert('Ingrese un número del 1 al 10')
+         alert('Ingresa tu calificación de Español')
      }
 
  } while (askAgain);
 
 
  do {
-    terceraCalificacion = parseInt(prompt('Ingresa tu tercera calificación'))
+    CalificacionIngles = parseInt(prompt('Ingresa tu tercera calificación'))
 
-     if (terceraCalificacion <= 10) {
+     if (CalificacionIngles <= 10) {
           askAgain = false
      } else {
-         alert('Ingrese un número del 1 al 10')
+         alert('Ingresa tu calificación de Ingles')
      }
 
  } while (askAgain);
 
 
  do {
-    cuartaCalificacion = parseInt(prompt('Ingresa tu cuarta calificación'))
+    CalificacionCiencias = parseInt(prompt('Ingresa tu cuarta calificación'))
 
-     if (cuartaCalificacion <= 10) {
+     if (CalificacionCiencias <= 10) {
           askAgain = false
      } else {
-         alert('Ingrese un número del 1 al 10')
+         alert('Ingresa tu calificación de Ciencias')
      }
 
  } while (askAgain);
@@ -63,14 +63,20 @@ function promedio(primeraCalificacion, segundaCalificacion, terceraCalificacion,
  alert('Tu promedio es de: '+ resultadoDelPromedio)
  };
 
- promedio(primeraCalificacion, segundaCalificacion, terceraCalificacion, cuartaCalificacion);
+ promedio(CalificacionMatematicas, CalificacionEspañol, CalificacionIngles, CalificacionCiencias);
  mostrarResultado(resultado);
 
 
 
+ const materiasLista = [
+    {materia: 'Matematicas', calificacion: 9},
+        {materia: 'Español', calificacion: 8},
+        {materia: 'Ingles', calificacion: 10},
+        {materia: 'Ciencias', calificacion: 6},
+ ]
 
-
-
-
+ materiasLista.forEach((materia) => {
+   console.log(materia)
+ })
 
  
